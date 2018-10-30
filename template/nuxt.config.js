@@ -15,6 +15,9 @@ const accessLogStream = rfs('access.log', {
 
 module.exports = {
   head: {
+    htmlAttrs: {
+      lang: 'en'
+    },
     titleTemplate: '{{ name }} | %s',
     title: 'Welcome',
     noscript: [{ innerHTML: 'This website requires JavaScript.' }],

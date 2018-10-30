@@ -6,7 +6,8 @@ export default function() {
     state: {
       locales: ['en'],
       locale: 'en',
-      content: {}
+      content: {},
+      browserSpecs: null
     },
 
     mutations: {
@@ -16,6 +17,9 @@ export default function() {
       },
       setContent(state, content) {
         state.content = content
+      },
+      setBrowserSpecs(state, specs) {
+        state.browserSpecs = specs
       }
     },
 

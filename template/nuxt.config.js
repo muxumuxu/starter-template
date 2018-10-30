@@ -48,7 +48,7 @@ module.exports = {
   serverMiddleware: [morgan('combined', { stream: accessLogStream })],
 
   router: {
-    middleware: ['i18n', 'contentful'],
+    middleware: ['i18n', 'browser-specs', 'contentful'],
     scrollBehavior(to, _from, savedPosition) {
       // if the returned position is falsy or an empty object,
       // will retain current scroll position.

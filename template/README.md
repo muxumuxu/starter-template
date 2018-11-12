@@ -8,6 +8,15 @@
 
 First, make sure to have a [Docker](https://docker.com) daemon running.
 
+__Create a `.env` file.__
+
+```shell
+NODE_ENV=development
+CONTENTFUL_SPACE_ID=
+CONTENTFUL_ACCESS_TOKEN=
+HOSTNAME={{ websiteUrl }}
+```
+
 __Build & launch the project Docker image.__
 
 ```shell

@@ -1,3 +1,4 @@
+require('dotenv').load()
 const webpack = require('webpack')
 const fs = require('fs-extra')
 const morgan = require('morgan')
@@ -109,12 +110,6 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    },
-
-    plugins: [
-      new webpack.ProvidePlugin({
-        _: 'lodash'
-      })
-    ]
+    }
   }
 }

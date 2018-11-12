@@ -3,3 +3,4 @@ npm-debug.log
 .nuxt
 dist
 logs
+.env

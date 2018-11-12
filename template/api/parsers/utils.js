@@ -9,9 +9,8 @@ export const parseImage = (entry, useJPG = true) => {
   return { src, alt, size }
 }
 
-export const parseLink = (entry, useJPG = true) => {
+export const parseLink = entry => {
   if (!entry || !entry.fields) return null
-  const { title, url, target } = entry.fields
-  const image = parseImage(entry.fields.image, useJPG)
-  return { title, url, image, target }
+  const { title, url } = entry.fields
+  return { title, url }
 }

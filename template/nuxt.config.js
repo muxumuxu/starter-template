@@ -36,7 +36,7 @@ module.exports = {
   },
 
   css: [
-    { src: '~assets/css/main.sass', lang: 'sass' }
+    { src: '~assets/css/main.scss', lang: 'scss' }
   ],
 
   sitemap: {
@@ -95,7 +95,7 @@ module.exports = {
   ],
 
   modules: [
-    ['nuxt-sass-resources-loader', '@/assets/css/variables.sass'],
+    ['nuxt-sass-resources-loader', '@/assets/css/variables.scss'],
     '@nuxtjs/sitemap'
   ],
 

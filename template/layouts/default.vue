@@ -24,18 +24,21 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-.site
-  background: $white
-  margin: 0 auto
-  max-width: 1440px
-  overflow: hidden
+<style lang="scss" scoped>
+.site {
+  background: $white;
+  margin: 0 auto;
+  max-width: 1440px;
+  overflow: hidden;
 
-  [href="#main"]
-    left: 10px
-    position: absolute
-    top: -100%
+  [href="#main"] {
+    left: 10px;
+    position: absolute;
+    top: -100%;
 
-    &:focus
-      top: 10px
+    &:focus {
+      top: 10px;
+    }
+  }
+}
 </style>

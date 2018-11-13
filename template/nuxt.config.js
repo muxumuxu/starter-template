@@ -1,5 +1,4 @@
 require('dotenv').load()
-const webpack = require('webpack')
 const fs = require('fs-extra')
 const morgan = require('morgan')
 const rfs = require('rotating-file-stream')

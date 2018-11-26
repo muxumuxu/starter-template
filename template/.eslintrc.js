@@ -23,6 +23,15 @@ module.exports = {
     'vue/max-attributes-per-line': 0,
     'vue/require-prop-types': 0,
     'no-unused-vars': ['error', { 'argsIgnorePattern': '^_' }],
-    'prettier/prettier': ['error', { 'semi': false, 'singleQuote': true }]
+    'prettier/prettier': ['error', { 'semi': false, 'singleQuote': true }],
+    'vue/html-self-closing': ['error', {
+      'html': {
+        'void': 'always',
+        'normal': 'always',
+        'component': 'always'
+      },
+      'svg': 'always',
+      'math': 'always'
+    }]
   }
 }

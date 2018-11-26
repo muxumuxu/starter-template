@@ -4,6 +4,8 @@ services:
     stdin_open: true
     tty: true
     build: .
+    env_file:
+      - .env
     command: 'npm run dev'
     ports:
       - '3000:3000'
